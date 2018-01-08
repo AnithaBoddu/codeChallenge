@@ -1,0 +1,17 @@
+$control-height: 50px;
+$color: #FFFFFF;
+
+body {
+	background-color: $color;
+	
+	span {
+	text: center;
+	}
+	header{
+		height: $control-height;
+		background-color: $color;
+		border-bottom-style: solid;
+		border-color: #000000;
+	}
+}
+
