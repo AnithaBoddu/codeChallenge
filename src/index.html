@@ -1,17 +1,3 @@
-<!-- <!DOCTYPE>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello World</title>
-	<link rel='stylesheet' href='css/style.css'/>
-</head>
-<body>
-<h1>
-	hello
-
-</h1>
-</body>
-</html> -->
 
 <!doctype html>
 <html ng-app="ui.bootstrap.demo">
@@ -23,69 +9,112 @@
     <script src="controllers/controller.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='css/style.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
   </head>
-  <body>
-  <div class="wrapper">
+<body>
+<div class="content">
+    <div class="first_block"></div>
+  
+    <div class="second_block">
+<section id="first_row">
   	<div class="header">
-  		
-  		<img src="images/google.png">
-  	</div>
-  	<div class="div1">
-  		
-  			<h2>The early days </h2>
-  			<h1>MST3K</h1>
-  			<p>In the not-too-distant-future, next sunday, AD. 
-  			There was a man. There were some puppets. It was amazing.</p>
-  			<p>These are the experiments of the SOL.</p>
+  		 <img src="images/google.png"> 
+    </div>
+    <div class="div1">
+  		<p>
+  			<h3>The early days</h3>
+  			<h2>MST3K</h2>
+  			In the not-too-distant-future, next sunday, AD.</br>
+  			There was a man. There were some puppets. It was amazing.</br>
+  			These are the experiments of the SOL.</br>
 
-  			
-  		
+        </p>	
   	</div>
-<div class="div2">
- 	<iframe width=80% height="350"
-src="https://www.youtube.com/embed/L0MK7qz13bU">
-</iframe>
- </div>
- <div class="div3">
- 	<h1>Look what we found</h1>
- </div>
-<div ng-controller="ModalDemoCtrl as $ctrl" class="modal-demo" id="div4">
-    <script type="text/ng-template" id="video1.html">
+</section>
+  	
+<section id="second_row">
+  	
+    <div class="div2">
+ 	    <iframe width=100% height="350"
+          src="https://www.youtube.com/embed/8UVNT4wvIGY">
+        </iframe>
+    </div>
+    <div class="div3">
+ 	    <h3>Look what we found...</h3>
+    </div>
+    <div ng-controller="ModalDemoCtrl as $ctrl" class="modal-demo" id="div4">
+        <script type="text/ng-template" id="video1.html">
         <div class="modal-header">
             <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">X</button>
         </div>
-        <div class="modal-body" id="div1">
-          <iframe width=100% height="315" src="https://www.youtube.com/embed/zYVKLF8H9qM?autoplay=1"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="modal-body" >
+        	
+        	
+          <iframe width=100% height="315" src="https://www.youtube.com/embed/BQ0mxQXmLsk?autoplay=1"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div>
-    </script>
-    <script type="text/ng-template" id="video2.html">
-        <div class="modal-header" id="div2">
+        </script>
+        <script type="text/ng-template" id="video2.html">
+        <div class="modal-header" >
             <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">X</button>
         </div>
-        <div class="modal-body" id="div2">
-          <iframe  width=100% height="315" src="https://www.youtube.com/embed/PE23N4Jk8JM?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="modal-body" >
+        	
+            <iframe  width=100% height="315" src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div>
-    </script>
-    <script type="text/ng-template" id="video3.html">
+        </script>
+        <script type="text/ng-template" id="video3.html">
         <div class="modal-header">
             <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">X</button>
         </div>
-        <div class="modal-body" id="div3">
-          <iframe  width=100% height="315" src="https://www.youtube.com/embed/eg3mEwgisVY?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="modal-body" >
+        	
+            <iframe  width=100% height="315" src="https://www.youtube.com/embed/fKopy74weus?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div>
-    </script>
-    
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('video1')">button1</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('video2')">button2</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('video3')">button3</button>
+        </script>
+     
+       <div class="youtubeVideos" align="center">
+        <ul>
+        	<li>
+        		 <button type="button"  ng-click="$ctrl.open('video1')"><img src="images/perfect.png"></button>
+        	</li>
+        	<li>
+        		<button type="button"  ng-click="$ctrl.open('video2')"><img src="images/thunder.png"></button>
+        	</li>
+        	<li>
+        		<button type="button" ng-click="$ctrl.open('video3')"><img src="images/perfect.png"></button>
+        	</li>
+        </ul>
+       </div>
+        
+        
+    </div>
+</section>
+<section id="third_row">
+    <div class="contacts">
+	    <ul>
+            <li class="contact"><a href="https://facebook.com/" target="_blank"><i
+                        class="fa fa-facebook"></i></a> </li>
+                
+            <li class="contact"><a href="https://www.twitter.com/" target="_blank"><i
+                        class="fa fa-twitter"></i> </a> </li>
+                    
+            <li class="contact"><a href="https://google.com/" target="_blank"><i
+                        class="fa fa-google-plus"></i> </a></li>
+
+            <li class="contact"><a href="https://pinterest.com/" target="_blank"><i
+                        class="fa fa-pinterest"></i> </a></li>
+        </ul>
+    </div>
+</section>
+
+    </div>
+    <div class="third_block"></div>
+    <div class="fourth_block"></div>
 </div>
-<div class="div5">
-	
-</div>
-<div class="footer">
-	
-</div>
-</div>
-  </body>
+</body>
 </html>
 
